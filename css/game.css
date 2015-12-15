@@ -1,0 +1,77 @@
+body, html {
+    min-width: 500px;
+    min-height: 900px;
+    width: 99%;
+    height: 99%;
+    background: #662d91;
+}
+
+.background {
+    table-layout: fixed;
+    background-image: url("http://i.imgur.com/l3TcPFO.jpg");
+    border-spacing: 0;
+}
+
+.background td {
+    padding: 0;
+}
+
+.lava {
+    background: rgb(255, 243, 61);
+}
+
+.wall {
+    background: white;
+}
+
+.actor {
+    position: absolute;
+}
+
+.player {
+    background: url("../cat-03.png") no-repeat center;
+    background-size: 60px 60px;
+)
+}
+
+.dog {
+    background: url("../dog.png") no-repeat center;
+    background-size: 60px 60px;
+}
+
+.coin {
+    background: url("../img/fish.png") no-repeat;
+}
+
+.game {
+    overflow: hidden;
+    width: 900px;
+    height: 900px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.lost .player {
+    background: url("../img/cat-die.png") no-repeat center;
+    background-size: 60px 60px;
+}
+
+.won .player {
+    box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+}
+
+.winscreen {
+    background: url("../Win_Screen%20.png") no-repeat center;
+    background-size: 50% 50%;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.losescreen {
+    background: url("../Lose_Screen.png") no-repeat center;
+    background-size: 50% 50%;
+    display: none;
+    width: 100%;
+    height: 100%;
+}

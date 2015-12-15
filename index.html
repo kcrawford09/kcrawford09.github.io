@@ -1,0 +1,33 @@
+<!doctype html>
+<link rel="stylesheet" href="css/styles.css">
+<script src="code/game.js"></script>
+<script src="code/levels.js"></script>
+<script src="code/canvas.js"></script>
+
+<body>
+<audio id="overworld" src="sounds/overworld.ogg"></audio>
+<audio id="coin" src="sounds/coin.mp3" style="display: none;"></audio>
+<audio id="death" src="sounds/death.mp3" style="display: none;"></audio>
+<audio id="jump" src="sounds/jump.mp3" style="display: none;"></audio>
+<audio id="dogJump" src="sounds/dog.mp3" style="display: none;"></audio>
+<audio id="lose" src="sounds/losesong.mp3" style="display: none;"></audio>
+<audio id="win" src="sounds/winsong.mp3" style="display: none;"></audio>
+<div id="container">
+    <h1>Astrocat</h1>
+    <h2>How to play</h2>
+    <p>You are the wonderful Astrocat <b>Tristan</b>! Your home planet, Yarntopia, has been invaded by the evil Woofians. In
+        order to save Yarntopia you must collect the fish in order to feed the Meowians. They are weak from hunger and need their strength in order to fight off the
+        Woofian army. Yarntopia is slowly unraveling due to this Catostrophic war! The core of the planet is very toxic and will kill you on impact. You must collect
+        all of the fish in order to move onto the next level. Do not touch the yellow lava or the Woofians! Fortunatley due to your genetics you have 9 lives! Use them
+        wisely. Save the planet. It is in your paws meow.</p>
+</div>
+<div id="startScreen" class="startScreen absolute-center"></div>
+<div id="test">
+    <script>
+        runGame(GAME_LEVELS, DOMDisplay);
+    </script>
+</div>
+<div id="winScreen" class="winScreen absolute-center"></div>
+<div id="loseScreen" class="loseScreen absolute-center"></div>
+<canvas id="particles" width="1000px" height="520" />
+</body>
